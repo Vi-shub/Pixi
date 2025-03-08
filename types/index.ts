@@ -29,3 +29,9 @@ export type TRoundedProps = {
    className?: string;
    backgroundColor: string;
 };
+declare global {
+   interface Window {
+      _fluidSimulationInitialized?: boolean;
+      ga?: (...args: any[]) => void;
+   }
+}

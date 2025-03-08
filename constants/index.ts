@@ -35,22 +35,26 @@ export const footerItems = [
    {
       id: 1,
       title: "Instagram",
-      href: "https://www.instagram.com/",
+      href: "https://www.instagram.com/pixavia._?igsh=MTltaXhwaDFxbjJ2cA==",
+      icon: "fab fa-instagram",
    },
    {
       id: 2,
       title: "Behance",
-      href: "https://www.behance.com/",
+      href: "https://www.behance.net/pixaviastudio",
+      icon: "fab fa-behance",
    },
    {
       id: 3,
-      title: "Facebook",
-      href: "https://www.facebook.com/",
+      title: "Youtube",
+      href: "https://youtube.com/@pixaviadesignstudio?si=Jhy9JIqCU8zVLxaP",
+      icon: "fab fa-youtube",
    },
    {
       id: 4,
       title: "Linkedin",
-      href: "https://www.linkedin.com/",
+      href: "https://www.linkedin.com/in/pixavia-studio-a26015346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      icon: "fab fa-linkedin",
    },
 ];
 

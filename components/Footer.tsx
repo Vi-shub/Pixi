@@ -5,8 +5,8 @@ import { LinkHover, TextMask } from "@/animation";
 import { footerItems, footernavbarItems } from "@/constants";
 
 export default function Footer() {
-	const phrase = ["Eye-", "opening"];
-	const phrase1 = ["PRESENTATIONS"];
+	const phrase = ["Awesome", "design"];
+	const phrase1 = ["Brand Grow"];
 	return (
 		<footer className="w-full min-h-screen padding-x z-30 relative pt-[40px] bg-background flex flex-col justify-between rounded-t-[20px] mt-[-20px]">
 			<div className="w-full flex justify-between sm:flex-col xm:flex-col">
@@ -80,7 +80,7 @@ export default function Footer() {
 								E:
 							</h1>
 							<LinkHover
-								title="hello@ochi.design"
+								title="pixaviastudio@gmail.com"
 								href="/"
 								className="before:h-[1px] after:h-[1px] paragraph font-medium before:bottom-[-3px] after:bottom-[-3px]"
 							/>
@@ -102,7 +102,7 @@ export default function Footer() {
 				<div className="w-1/2 h-full flex gap-[10px] justify-between items-end sm:w-full xm:w-full sm:flex-col xm:flex-col sm:items-start xm:items-start">
 					<div className="flex sm:flex-col xm:flex-col gap-[10px]">
 						<h1 className="paragraph font-medium font-NeueMontreal text-secondry opacity-40">
-							© ochi design 2024.
+							© PIXAVIA design 2024.
 						</h1>
 						<LinkHover
 							title="Legal Terms"
@@ -112,7 +112,7 @@ export default function Footer() {
 					</div>
 					<div>
 						<LinkHover
-							title="Website by Zain"
+							title="Website by Shubham"
 							href="/"
 							className="before:h-[1px] after:h-[1px] paragraph font-medium text-secondry opacity-40 before:bottom-[-3px] after:bottom-[-3px]"
 						/>

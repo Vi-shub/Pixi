@@ -14,7 +14,7 @@ export default function Clients() {
 
 	return (
 		<section className="w-full padding-y">
-			<h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry pb-[50px]">
+			{/* <h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry pb-[50px]">
 				Clients’ reviews
 			</h1>
 			{clientsItem.map((item) => (
@@ -120,7 +120,7 @@ export default function Clients() {
 						<div className="w-[10%] sm:w-auto xm:w-auto" />
 					</div>
 				</div>
-			))}
+			))} */}
 			<div className="padding-x pt-[80px]">
 				<Ratings />
 			</div>

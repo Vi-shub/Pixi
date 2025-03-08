@@ -39,7 +39,7 @@ export default function Ratings() {
 								backgroundColor="#fff"
 								className="">
 								<p className="z-10 px-[12px] py-[8px] hover:text-black">
-									rating 5.0 on clutch
+									rating 5.0 on behance
 								</p>
 							</Rounded>
 						</Link>
