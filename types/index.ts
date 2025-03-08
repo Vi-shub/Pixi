@@ -34,4 +34,5 @@ declare global {
       _fluidSimulationInitialized?: boolean;
       ga?: (...args: any[]) => void;
    }
+   var ga: any;
 }
