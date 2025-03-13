@@ -18,14 +18,16 @@ function Loader() {
         <div className="Loader flex flex-col justify-between h-full items-start ">
           <div className="loader-header flex flex-col gap-20">
             <div className="heading uppercase font-bold">
-              <h1 className="text-[20px] md:text-[30px] font-bold">PIXAVIA</h1>
-              <h1 className="text-[50px] md:text-[100px] lg:text-[100px]">
+              <h1 className="text-[20px] md:text-[30px] lg:text-[40px] font-bold">
+                PIXAVIA
+              </h1>
+              <h1 className="text-[50px] md:text-[80px] lg:text-[90px] xl:text-[110px] 2xl:text-[130px]">
                 We create
               </h1>
-              <h1 className="text-[50px] md:text-[100px] lg:text-[100px]">
+              <h1 className="text-[50px] md:text-[80px] lg:text-[90px] xl:text-[110px] 2xl:text-[130px]">
                 eye-opening
               </h1>
-              <h1 className="text-[50px] md:text-[100px] lg:text-[100px]">
+              <h1 className="text-[50px] md:text-[80px] lg:text-[90px] xl:text-[110px] 2xl:text-[130px]">
                 designs
               </h1>
             </div>
