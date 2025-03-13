@@ -13,18 +13,22 @@ export default function About() {
 		<section className="w-full bg-about padding-y rounded-t-[20px] z-20 relative mt-[-15px]">
 			<div className="pl-[50px] sm:px-[20px] xm:px-[20px]">
 				<h2 className="sub-heading font-medium font-NeueMontreal text-secondry">
-					Pixavia is a strategic partner for fast-grow­ing tech
-					<br className="sm:hidden xm:hidden" /> businesses that need to&nbsp;
+				Pixavia is a creative studio helping 
+					<br className="sm:hidden xm:hidden" />brands&nbsp;
 					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
-						raise funds,
+					stand out.
 					</span>
-					&nbsp;sell prod­ucts, <br className="sm:hidden xm:hidden" />
-					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
+					&nbsp;We craft stunning visuals 
+					&nbsp; <br className="sm:hidden xm:hidden" />
+					{/* <span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
 						ex­plain com­plex ideas,
-					</span>
-					&nbsp;and&nbsp;
+					</span> */}
+					to tell stories,&nbsp; 
 					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
-						hire great peo­ple.
+					elevate identities,
+					</span> and &nbsp;
+					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
+					captivate audiences.
 					</span>
 				</h2>
 			</div>
@@ -37,18 +41,16 @@ export default function About() {
 					</div>
 					<div className="w-[50%] sm:w-full xm:w-full">
 						<div className="w-full flex gap-[30px] h-full items-end sm:items-start sm:flex-col xm:items-start xm:flex-col">
-							<div className="w-[40%] sm:w-[60%] xm:w-[60%]">
-								<p className="sub-paragraph font-medium font-NeueMontreal text-secondry tracking-wide">
-									We create tailored presentations to help you persuade your
-									colleagues, clients, or investors. Whether it’s live or
-									digital, delivered for one or a hundred people.
-								</p>
-								<p className="sub-paragraph font-medium font-NeueMontreal text-secondry pt-[30px] tracking-wide">
-									We believe the mix of strategy and design (with a bit of
-									coffee) is what makes your message clear, convincing, and
-									captivating.
-								</p>
-							</div>
+						<div className="w-[40%] sm:w-[60%] xm:w-[60%]">
+  <p className="sub-paragraph font-medium font-NeueMontreal text-secondry tracking-wide">
+    Pixavia is a cutting-edge design studio transforming ideas into visual masterpieces.  
+    We specialize in video editing, graphic design, branding, 3D modeling, and motion graphics.
+  </p>
+  <p className="sub-paragraph font-medium font-NeueMontreal text-secondry pt-[30px] tracking-wide">
+    Our blend of creativity and precision ensures every project is original, impactful, and seamless.
+  </p>
+</div>
+
 							<div className="w-[60%] flex justify-end flex-col  sm:w-full xm:w-full">
 								<h1 className="sub-paragraph font-medium font-NeueMontreal text-secondry pb-[20px]">
 									S:

@@ -17,18 +17,18 @@ function Loader() {
       <div className="Loader_page z-10 bg-white py-10 px-6 md:p-10 h-3/4 w-3/4 md:w-3/4 rounded-2xl">
         <div className="Loader flex flex-col justify-between h-full items-start ">
           <div className="loader-header flex flex-col gap-20">
-            <div className="heading uppercase font-bold">
-              <h1 className="text-[20px] md:text-[30px] lg:text-[40px] font-bold">
+            <div className="heading  font-bold">
+              <h1 className="text-[20px] md:text-[30px] lg:text-[40px] font-bold uppercase">
                 PIXAVIA
               </h1>
               <h1 className="text-[50px] md:text-[80px] lg:text-[90px] xl:text-[110px] 2xl:text-[130px]">
-                We create
+              Where Creativity
               </h1>
               <h1 className="text-[50px] md:text-[80px] lg:text-[90px] xl:text-[110px] 2xl:text-[130px]">
-                eye-opening
+              Meets 
               </h1>
               <h1 className="text-[50px] md:text-[80px] lg:text-[90px] xl:text-[110px] 2xl:text-[130px]">
-                designs
+              Innovation
               </h1>
             </div>
           </div>
