@@ -1,155 +1,120 @@
-import Link from "next/link";
+import { useState } from "react";
 import { RoundButton } from "@/components";
 
 export default function Form() {
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		phone: "",
+		message: "",
+	});
+	const [loading, setLoading] = useState(false);
+	const [success, setSuccess] = useState<string | null>(null);
+
+	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		setLoading(true);
+
+		const response = await fetch("/api/sendEmail", {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify(formData),
+		});
+
+		const result = await response.json();
+		setLoading(false);
+
+		if (result.success) {
+			setSuccess("Your inquiry has been sent successfully!");
+			setFormData({ name: "", email: "", phone: "", message: "" });
+		} else {
+			setSuccess("Failed to send inquiry. Please try again.");
+		}
+	};
+
 	return (
 		<section className="w-full padding-x padding-y">
-			<div className="w-full flex flex-col gap-[15px]">
-				<div className="w-full flex gap-[15px] sm:flex-col xm:flex-col">
-					<div className="flex gap-[10px] w-[50%] sm:w-full xm:w-full sm:flex-col xm:flex-col">
-						<div className="xl:min-w-max lg:min-w-max md:min-w-max">
-							<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
-								Hi! My name is
-							</h2>
-						</div>
-						<div className="w-full">
-							<input
-								type="text"
-								placeholder="Enter your name*"
-								className="paragraph w-full font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry text-center sm:text-left xm:text-left outline-none focus:placeholder:opacity-0 mt-[20px] transform transition duration-200 ease-in-out sm:w-full xm:w-full"
-							/>
-						</div>
-					</div>
-					<div className="flex gap-[10px] w-[50%] sm:w-full xm:w-full sm:flex-col xm:flex-col">
-						<div className="xl:min-w-max lg:min-w-max md:min-w-max">
-							<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
-								and I work with
-							</h2>
-						</div>
-						<div className="w-full">
-							<input
-								type="text"
-								placeholder="Compony name type here*"
-								className="paragraph w-full font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry text-center sm:text-left xm:text-left outline-none focus:placeholder:opacity-0 mt-[20px] transform transition duration-200 ease-in-out sm:w-full xm:w-full"
-							/>
-						</div>
-					</div>
+			<form className="w-full flex flex-col gap-[15px]" onSubmit={handleSubmit}>
+				{/* Name Field */}
+				<div className="w-full flex flex-col gap-[10px]">
+					<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
+						Hi! My name is
+					</h2>
+					<input
+						type="text"
+						name="name"
+						value={formData.name}
+						onChange={handleChange}
+						placeholder="Enter your name*"
+						required
+						className="paragraph w-full font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry outline-none focus:placeholder:opacity-0 mt-[10px] transition duration-200 ease-in-out"
+					/>
 				</div>
-				<div className="w-full flex gap-[10px]">
-					<div className="flex gap-[10px] w-full sm:flex-col xm:flex-col">
-						<div className="xl:min-w-max lg:min-w-max md:min-w-max">
-							<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
-								I’m looking for a partner to help me with
-							</h2>
-						</div>
-						<div className="w-full">
-							<input
-								type="text"
-								placeholder="Your goal type here*"
-								className="paragraph font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry text-center sm:text-left xm:text-left outline-none focus:placeholder:opacity-0 mt-[20px] transform transition duration-200 ease-in-out w-full sm:w-full xm:w-full"
-							/>
-						</div>
-					</div>
+
+				{/* Email Field */}
+				<div className="w-full flex flex-col gap-[10px]">
+					<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
+						You can reach me at
+					</h2>
+					<input
+						type="email"
+						name="email"
+						value={formData.email}
+						onChange={handleChange}
+						placeholder="name@example.com*"
+						required
+						className="paragraph w-full font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry outline-none focus:placeholder:opacity-0 mt-[10px] transition duration-200 ease-in-out"
+					/>
 				</div>
-				<div className="w-full flex gap-[10px]">
-					<div className="flex gap-[10px] w-full sm:flex-col xm:flex-col">
-						<div className="xl:min-w-max lg:min-w-max md:min-w-max">
-							<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
-								With an idea of having that completed
-							</h2>
-						</div>
-						<div className="w-full">
-							<input
-								type="text"
-								placeholder="Date*"
-								className="paragraph font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry text-center sm:text-left xm:text-left outline-none focus:placeholder:opacity-0 mt-[20px] transform transition duration-200 ease-in-out w-full sm:w-full xm:w-full"
-							/>
-						</div>
-					</div>
+
+				{/* Phone Field */}
+				<div className="w-full flex flex-col gap-[10px]">
+					<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
+						My phone number is
+					</h2>
+					<input
+						type="tel"
+						name="phone"
+						value={formData.phone}
+						onChange={handleChange}
+						placeholder="Enter your phone number*"
+						required
+						className="paragraph w-full font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry outline-none focus:placeholder:opacity-0 mt-[10px] transition duration-200 ease-in-out"
+					/>
 				</div>
-				<div className="w-full flex gap-[10px]">
-					<div className="flex gap-[10px] w-full sm:flex-col xm:flex-col">
-						<div className="xl:min-w-max lg:min-w-max md:min-w-max">
-							<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
-								I am hoping to stay around a budget range of
-							</h2>
-						</div>
-						<div className="w-full">
-							<input
-								type="text"
-								placeholder="Select*"
-								className="paragraph font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry text-center sm:text-left xm:text-left outline-none focus:placeholder:opacity-0 mt-[20px] transform transition duration-200 ease-in-out w-full sm:w-full xm:w-full"
-							/>
-						</div>
-					</div>
+
+				{/* Message Field */}
+				<div className="w-full flex flex-col gap-[10px]">
+					<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
+						I&apos;d like to inquire about
+					</h2>
+					<textarea
+						name="message"
+						value={formData.message}
+						onChange={handleChange}
+						placeholder="Type your message here..."
+						required
+						className="paragraph w-full font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry outline-none focus:placeholder:opacity-0 mt-[10px] transition duration-200 ease-in-out h-24 resize-none"
+					/>
 				</div>
-				<div className="w-full flex gap-[10px]">
-					<div className="flex gap-[10px] w-full sm:flex-col xm:flex-col">
-						<div className="xl:min-w-max lg:min-w-max md:min-w-max">
-							<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
-								You can reach me at
-							</h2>
-						</div>
-						<div className="w-full">
-							<input
-								type="text"
-								placeholder="name@example.com"
-								className="paragraph font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry text-center sm:text-left xm:text-left outline-none focus:placeholder:opacity-0 mt-[20px] transform transition duration-200 ease-in-out w-full sm:w-full xm:w-full"
-							/>
-						</div>
-						<div className="xl:min-w-max lg:min-w-max md:min-w-max">
-							<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
-								to start the conversation.
-							</h2>
-						</div>
-					</div>
+
+				{/* Submit Button */}
+				<div className="w-full flex justify-end pt-[30px]">
+					<button
+						type="submit"
+						className="w-fit flex items-center justify-between bg-secondry cursor-pointer rounded-full group px-6 py-2 text-white"
+						disabled={loading}
+					>
+						{loading ? "Sending..." : "Send Inquiry"}
+					</button>
 				</div>
-				<div className="w-full flex gap-[10px]">
-					<div className="flex gap-[10px] w-full sm:flex-col xm:flex-col">
-						<div className="xl:min-w-max lg:min-w-max md:min-w-max">
-							<h2 className="sub-heading font-NeueMontreal font-normal text-secondry">
-								Optionally, i’m sharing more:
-							</h2>
-						</div>
-						<div className="w-full">
-							<input
-								type="text"
-								placeholder="Product details type here..."
-								className="paragraph font-NeueMontreal font-normal text-secondry bg-background border-b border-[#21212155] focus:border-secondry text-center sm:text-left xm:text-left outline-none focus:placeholder:opacity-0 mt-[20px] transform transition duration-200 ease-in-out w-full sm:w-full xm:w-full"
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className="w-full flex items-center justify-end sm:justify-start xm:justify-start pt-[50px]">
-				<div className="flex sm:flex-col xm:flex-col gap-[25px]">
-					<div className="flex gap-[10px] items-center">
-						<div className="flex gap-[10px]">
-							<input
-								type="checkbox"
-								className="w-[30px]"
-							/>
-							<p className="paragraph text-secondry font-NeueMontreal font-normal">
-								I agree with the
-							</p>
-						</div>
-						<Link
-							className="paragraph font-medium font-NeueMontreal text-secondry capitalize flex flex-col hover"
-							href={"/privacy"}>
-							Privacy Policy
-						</Link>
-					</div>
-					<div className="w-fit flex items-center justify-between bg-secondry cursor-pointer rounded-full group">
-						<RoundButton
-							bgcolor="#212121"
-							href="/"
-							title="send inquiry"
-							className="bg-white text-black"
-							style={{ color: "#fff" }}
-						/>
-					</div>
-				</div>
-			</div>
+
+				{success && <p className="text-green-600">{success}</p>}
+			</form>
 		</section>
 	);
 }

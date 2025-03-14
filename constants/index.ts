@@ -17,11 +17,7 @@ export const navbarItems = [
       title: "About us",
       href: "/ochi-team",
    },
-   {
-      id: 4,
-      title: "Insights",
-      href: "/insights",
-   },
+   
    {
       id: 5,
       title: "Contact us",
@@ -79,11 +75,7 @@ export const footernavbarItems = [
       title: "About us",
       href: "ochi-team",
    },
-   {
-      id: 5,
-      title: "Insights",
-      href: "insights",
-   },
+   
    {
       id: 6,
       title: "Contact us",

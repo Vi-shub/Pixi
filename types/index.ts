@@ -14,7 +14,7 @@ export type TMarqueeProps = {
 };
 
 export type TLinkHoverProps = {
-   title: string;
+   title: React.ReactNode;
    href: string;
    className?: string;
 };

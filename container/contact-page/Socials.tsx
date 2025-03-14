@@ -10,7 +10,7 @@ import { Eyes } from "@/components";
 
 export default function Socials() {
 	const [rotate, setRotate] = useState(0);
-	const phrase = ["INSTAGRAM", "behance", "facebook", "linkedin"];
+	const phrase = ["INSTAGRAM", "behance", "youtube", "linkedin"];
 	useEffect(() => {
 		window.addEventListener("mousemove", (e) => {
 			let mouseX = e.clientX;
@@ -81,7 +81,7 @@ export default function Socials() {
 									<Link
 										href="mailto:hello@ochi.design"
 										className="paragraph font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-200 ease-in">
-										hello@ochi.design
+										pixavia.studio@gmail.com
 									</Link>
 								</div>
 								<div className="w-[33px] flex items-center justify-center h-[33px] border-[2px] border-[#21212155] rounded-[50px] group-hover:bg-secondry transition-all duration-200 ease-in cursor-pointer sm:hidden xm:hidden">

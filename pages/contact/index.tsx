@@ -16,7 +16,7 @@ export default function Contact() {
 				<Herocontact />
 				<Form />
 				<Socials />
-				<FAQ />
+				{/* <FAQ /> */}
 			</Curve>
 		</>
 	);
