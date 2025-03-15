@@ -12,7 +12,6 @@ const routes = {
 	"/legal-terms": "Legal Terms",
 	"/insights": "Insights",
 	"/contact": "Contact Us",
-	"/case": "Workiz Easy",
 };
 
 const anim = (variants) => {

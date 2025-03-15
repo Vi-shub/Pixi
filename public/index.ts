@@ -3,7 +3,7 @@ export { default as logo } from './pixavia-logo.png';
 export { default as logo_black } from './pixavia-logo-black.png';
 export { default as mobileLogo } from './mobile-logo.png';
 export { default as awwwards } from './awwwards.svg';
-export { default as aboutImg } from './aboutImg.webp';
+export { default as aboutImg } from './aboutImg.jpg';
 export { default as videoImg } from './videoImg.jpeg';
 export { default as project1 } from './project1.jpg';
 export { default as project2 } from './project2.jpg';
@@ -64,7 +64,6 @@ export { default as principles1 } from './principles1.jpeg';
 export { default as principles2 } from './principles2.jpeg';
 
 // workiz page
-export { default as workiz } from './workiz.jpeg';
 export { default as welcome } from './welcome.jpeg';
 export { default as chelengeBg } from './chelengeBg.jpeg';
 export { default as showcase1 } from './showcase1.jpeg';
@@ -74,7 +73,6 @@ export { default as showcase4 } from './showcase4.jpeg';
 export { default as showcase5 } from './showcase5.jpeg';
 export { default as showcase6 } from './showcase6.jpeg';
 export { default as after } from './after.png';
-export { default as workizhero } from './workizhero.jpg';
 
 // about page
 export { default as planetly } from './planetly.svg';

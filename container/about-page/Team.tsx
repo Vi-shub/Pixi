@@ -13,7 +13,7 @@ export default function Team() {
 	return (
 		<section className="w-full bg-[#ff7f50] min-h-screen rounded-t-[20px]">
 			<div
-				style={{ minHeight: "300vh" }}
+				style={{ minHeight: "260vh" }}
 				className="relative flex flex-col items-center px-4 pt-24 pb-12 sm:px-6 lg:px-40"
 			>
 				<div className="w-[90%] space-y-8">

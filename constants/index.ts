@@ -885,26 +885,7 @@ export const presentationProjectItem = [
          { id: 1, title: "graphic", href: "/services" },
       ]
    },
-   {
-      id: 7,
-      title: "MediaTek",
-      src: project7,
-      href: "/case/",
-      type: "image", 
-      links: [
-         { id: 1, title: "graphic", href: "/services" },
-      ]
-   },
-   {
-      id: 8,
-      title: "Charged",
-      src: project8,
-      href: "/case/",
-      type: "image", 
-      links: [
-         { id: 1, title: "graphic", href: "/services" },
-      ]
-   },
+  
    // {
    //    id: 9,
    //    title: "workiz easy",
@@ -915,6 +896,26 @@ export const presentationProjectItem = [
    //       { id: 1, title: "graphic", href: "/services" },
    //    ]
    // },
+   {
+      id: 7,
+      title: "Models",
+      src: "/project1.mp4",
+      href: "/case/",
+      type: "video", 
+      links: [
+         { id: 1, title: "3D works", href: "/services" },
+      ]
+   },
+   {
+      id: 8,
+      title: "3D Verse",
+      src: "/project2.mp4",
+      href: "/case/",
+      type: "video", 
+      links: [
+         { id: 1, title: "3D works", href: "/services" },
+      ]
+   },
 ];
 
 
