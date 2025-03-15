@@ -5,8 +5,8 @@ import { LinkHover, TextMask } from "@/animation";
 import { footerItems, footernavbarItems } from "@/constants";
 
 export default function Footer() {
-  const phrase = ["Awesome", "design"];
-  const phrase1 = ["Brand Grow"];
+  const phrase = ["Creative", "Visuals"];
+  const phrase1 = ["ELevate Brand"];
   return (
     <footer className="w-full min-h-screen padding-x z-30 relative pt-[40px] bg-background flex flex-col justify-between rounded-t-[20px] mt-[-20px]">
       <div className="w-full flex justify-between sm:flex-col xm:flex-col">
@@ -51,7 +51,7 @@ export default function Footer() {
                   />
                   <LinkHover
                     className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-                    title={`laxmi shopping centrea`}
+                    title={`laxmi shopping centre`}
                     href="/contact"
                   />
                   <LinkHover
@@ -102,7 +102,7 @@ export default function Footer() {
         <div className="w-1/2 h-full flex gap-[10px] justify-between items-end sm:w-full xm:w-full sm:flex-col xm:flex-col sm:items-start xm:items-start">
           <div className="flex sm:flex-col xm:flex-col gap-[10px]">
             <h1 className="paragraph font-medium font-NeueMontreal text-secondry opacity-40">
-              © PIXAVIA design 2024.
+              © PIXAVIA design 2025.
             </h1>
             <LinkHover
               title="Legal Terms"

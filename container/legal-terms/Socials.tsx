@@ -62,7 +62,7 @@ export default function Socials() {
                   />
                   <LinkHover
                     className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-                    title={`laxmi shopping centrea`}
+                    title={`laxmi shopping centre`}
                     href="/contact"
                   />
                   <LinkHover

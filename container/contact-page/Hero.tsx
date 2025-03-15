@@ -26,10 +26,10 @@ export default function Hero() {
 								/>
 							</motion.span>
 							<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
-								LET&apos;S UNDERSTAND <br />
+								LET&apos;S START <br />
 							</h1>
 						</div>
-						TERMS AND CONDTIONS
+						WORK TOGETHER
 					</h1>
 				</div>
 				<div className="w-full pb-[15px] text-6xl font-bold">

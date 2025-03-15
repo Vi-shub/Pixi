@@ -81,15 +81,15 @@ export default function About() {
       </div>
       <div className="w-full flex justify-between padding-x sm:flex-col xm:flex-col gap-[30px]">
         <div className="flex flex-col gap-[30px]">
-          <Heading title="Our approach:" />
+          <Heading title="Our Studio:" />
           <div
             className="w-fit flex items-center justify-between bg-secondry cursor-pointer rounded-full group"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
             <RoundButton
-              href="/ochi-team"
-              title="read more"
+              href="/about-us"
+              title="find more"
               bgcolor="#000"
               className="bg-white text-black"
               style={{ color: "#fff" }}

@@ -24,8 +24,8 @@ export default function About() {
 				<Aboutabout />
 				<Team />
 				<Principles />
-				<Partners />
-				<Insights />
+				{/* <Partners /> */}
+				{/* <Insights /> */}
 				<Ready />
 			</Curve>
 		</>

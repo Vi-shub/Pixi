@@ -1,54 +1,55 @@
 import Image from "next/image";
-import { Team1, logo } from "@/public";
-import { Marquee } from "@/components";
+import { Team1, Team2, Team3, Team4, logo } from "@/public";
+import { motion } from "framer-motion";
+
+const teamMembers = [
+	{ name: "ABHISHEK SINGH", role: "Founder and CEO", image: Team1 },
+	{ name: "JANE DOE", role: "CTO", image: Team2 },
+	{ name: "JOHN SMITH", role: "COO", image: Team3 },
+	{ name: "EMILY DAVIS", role: "CFO", image: Team4 },
+];
 
 export default function Team() {
 	return (
 		<section className="w-full bg-marquee min-h-screen rounded-t-[20px]">
-			<div className="w-full bg-marquee z-10 relative rounded-t-[20px] padding-y">
-				<Marquee
-					title="the team core of"
-					className="pb-[50px] lg:pb-[40px] md:pb-[30px] sm:pb-[25px] xm:pb-[18px] text-[540px] leading-[330px] lg:text-[380px] lg:leading-[240px] md:text-[300px] md:leading-[160px] sm:text-[230px] sm:leading-[140px] xm:text-[130px] xm:leading-[80px]"
-				/>
-			</div>
-			<div className="w-full bg-marquee flex items-center justify-center pb-[50px]">
-				<div className="w-[80%] p-[20px] bg-background rounded-[20px] sm:w-full  xm:w-full">
-					<div className="w-full flex flex-col justify-between gap-[20px] py-[10px]">
-						<div className="flex justify-between sm:flex-col xm:flex-col gap-[20px]">
-							<div>
-								<Image
-									src={logo}
-									alt="ochi-logo"
-									width={50}
-									height={50}
-								/>
+			<div
+				style={{ minHeight: "300vh" }}
+				className="relative flex flex-col items-center px-4 pt-24 pb-12 sm:px-6 lg:px-40"
+			>
+				<div className="w-[90%] lg:max-w-none lg:px-40 space-y-8">
+					{teamMembers.map((member, index) => (
+						<motion.div
+							key={index}
+							style={{ top: `calc(1rem * ${index + 1})` }}
+							className="sticky w-full px-8 py-12 bg-background border rounded-lg shadow-lg"
+						>
+							<div className="flex justify-between sm:flex-col gap-[20px]">
+								<div>
+									<Image src={logo} alt="logo" width={50} height={50} />
+								</div>
+								<div>
+									<Image
+										src={member.image}
+										alt={member.name}
+										width={300}
+										height={300}
+										className="rounded-[10px] sm:w-full"
+									/>
+									<p className="paragraph font-NeueMontreal font-normal text-secondary py-[10px]">
+										{member.role}
+									</p>
+								</div>
 							</div>
-							<div>
-								<Image
-									src={Team1}
-									alt="ochi-logo"
-									width={300}
-									height={300}
-									className="rounded-[10px] sm:w-full xm:w-full"
-								/>
-								<p className="paragraph font-NeueMontreal font-normal text-secondry py-[10px]">
-									Founder and CEO
-								</p>
-							</div>
-						</div>
-						<div className="flex justify-between items-end sm:flex-col xm:flex-col sm:items-start xm:items-start">
-							<div>
-								<h1 className="heading font-bold font-FoundersGrotesk text-secondry">
-									IHOR <br /> HULYAHRODSKYY
+							<div className="flex justify-between items-end sm:flex-col sm:items-start">
+								<h1 className="heading font-bold font-FoundersGrotesk text-secondary">
+									{member.name}
+								</h1>
+								<h1 className="heading font-bold font-FoundersGrotesk text-secondary">
+									{index + 1} / {teamMembers.length}
 								</h1>
 							</div>
-							<div>
-								<h1 className="heading font-bold font-FoundersGrotesk text-secondry">
-									1 / 4
-								</h1>
-							</div>
-						</div>
-					</div>
+						</motion.div>
+					))}
 				</div>
 			</div>
 		</section>
