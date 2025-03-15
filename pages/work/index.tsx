@@ -19,7 +19,7 @@ export default function Presentation() {
 			<Curve backgroundColor={"#f1f1f1"}>
 				<Heropresentation />
 				<Projectspresentation />
-				<Publication />
+				{/* <Publication /> */}
 				<Ready />
 			</Curve>
 		</>
