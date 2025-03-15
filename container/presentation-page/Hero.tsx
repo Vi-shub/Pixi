@@ -5,7 +5,7 @@ export default function Hero() {
 		<section className="w-full padding-x bg-about sticky top-0 h-[65vh]">
 			<div className="w-full pt-[170px] pb-[20px]">
 				<div className="w-fit relative">
-					<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
+					<h1 className="heading pt-10 tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
 						Work
 					</h1>
 				</div>

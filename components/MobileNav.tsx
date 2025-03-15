@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { logo, mobileLogo } from "@/public";
+import { logo, pixa } from "@/public";
 import { footernavbarItems } from "@/constants";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
@@ -37,7 +37,7 @@ export default function MobileNav() {
 						<div className="w-full flex justify-between items-center h-[8vh] border-b border-[#f1f1f155] padding-x">
 							<Link href={"/"}>
 								<Image
-									src={mobileLogo}
+									src={pixa}
 									alt="ochi logo"
 									width={70}
 									height={70}

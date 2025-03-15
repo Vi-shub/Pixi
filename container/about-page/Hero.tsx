@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="w-full flex flex-col">
           <div className="w-full margin padding-x">
             <div>
-              <h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
+              <h1 className="heading pt-10 tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
                 WE ARE <br />
                 <div className="flex items-center gap-[5px]">
                   <motion.span

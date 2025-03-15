@@ -1,5 +1,6 @@
 export { default as eyes } from './eyes.svg';
 export { default as logo } from './pixavia-logo.png';
+export { default as pixa } from './pixavia.svg'
 export { default as logo_black } from './pixavia-logo-black.png';
 export { default as mobileLogo } from './mobile-logo.png';
 export { default as awwwards } from './awwwards.svg';
