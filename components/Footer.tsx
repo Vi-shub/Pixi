@@ -22,7 +22,7 @@ export default function Footer() {
             </h1>
             <div className="pt-[50px]">
               <h1 className="paragraph font-medium font-NeueMontreal text-secondry pb-[20px]">
-                S:
+                Socials:
               </h1>
               {footerItems.map((item) => (
                 <LinkHover
@@ -41,34 +41,34 @@ export default function Footer() {
             <div className="flex justify-between">
               <div className="pt-[50px]">
                 <h1 className="paragraph font-medium font-NeueMontreal text-secondry pb-[20px]">
-                  L:
+				Office Address:
                 </h1>
                 <div className="flex flex-col gap-y-[10px]">
                   <LinkHover
                     className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-                    title={`202-1965 W 4th Awe`}
-                    href="/"
+                    title={`Shop no 18`}
+                    href="/contact"
                   />
                   <LinkHover
                     className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-                    title={`Vancouver, Canada`}
-                    href="/"
+                    title={`laxmi shopping centrea`}
+                    href="/contact"
                   />
                   <LinkHover
                     className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-                    title="30 Chukarina"
-                    href="/"
+                    title="below metro station"
+                    href="/contact"
                   />
                   <LinkHover
                     className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-                    title="St Lviv, Ukraine"
-                    href="/"
+                    title="Ghatkopar West-400086"
+                    href="/contact"
                   />
                 </div>
               </div>
               <div className="pt-[50px]">
                 <h1 className="paragraph font-medium font-NeueMontreal text-secondry pb-[20px]">
-                  M:
+                  Explore:
                 </h1>
                 {footernavbarItems.map((item) => (
                   <LinkHover
@@ -82,11 +82,11 @@ export default function Footer() {
             </div>
             <div className="pt-[50px] flex gap-x-[20px]">
               <h1 className="paragraph font-medium font-NeueMontreal text-secondry">
-                E:
+                Email:
               </h1>
               <LinkHover
-                title="pixaviastudio@gmail.com"
-                href="/"
+                title="pixavia.studio@gmail.com"
+                href="contact"
                 className="before:h-[1px] after:h-[1px] paragraph font-medium before:bottom-[-3px] after:bottom-[-3px]"
               />
             </div>
@@ -106,7 +106,7 @@ export default function Footer() {
             </h1>
             <LinkHover
               title="Legal Terms"
-              href="/"
+              href="/legal-terms"
               className="before:h-[1px] after:h-[1px] paragraph font-medium text-secondry opacity-40 before:bottom-[-3px] after:bottom-[-3px]"
             />
           </div>

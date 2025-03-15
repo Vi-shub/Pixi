@@ -8,7 +8,7 @@ export default function Hero() {
 			<div className="w-full flex flex-col">
 				<div className="w-full margin">
 					<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
-						<div className="flex items-center gap-[5px]">
+						{/* <div className="flex items-center gap-[5px]">
 							<motion.span
 								initial={{ width: 0 }}
 								animate={{ width: "auto" }}
@@ -28,15 +28,15 @@ export default function Hero() {
 							<h1 className="heading tracking-[-1.3px] text-[#212121] font-semibold font-FoundersGrotesk uppercase">
 								LET&apos;S UNDERSTAND <br />
 							</h1>
-						</div>
+						</div> */}
 						TERMS AND CONDTIONS
 					</h1>
 				</div>
-				<div className="w-full pb-[15px] text-6xl font-bold">
+				{/* <div className="w-full pb-[15px] text-6xl font-bold">
 					<h3 className="text-secondry font-NeueMontreal">
 						Fill the form below:
 					</h3>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

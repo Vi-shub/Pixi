@@ -38,6 +38,11 @@ export default function Form() {
 
 	return (
 		<section className="w-full padding-x padding-y">
+			{/* <div className="w-full pb-[15px]">
+					<h3 className="paragraph font-medium text-secondry font-NeueMontreal text-3xl">
+						Fill the form below:
+					</h3>
+				</div> */}
 			<form className="w-full flex flex-col gap-[15px]" onSubmit={handleSubmit}>
 				{/* Name Field */}
 				<div className="w-full flex flex-col gap-[10px]">

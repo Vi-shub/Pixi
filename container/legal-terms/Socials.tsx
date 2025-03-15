@@ -52,7 +52,7 @@ export default function Socials() {
             <div className="w-[50%] sm:w-full xm:w-full flex sm:flex-col xm:flex-col justify-between gap-y-[20px]">
               <div>
                 <h1 className="paragraph font-medium font-NeueMontreal text-secondry pb-[20px]">
-				Office Address:
+                  Office Address:
                 </h1>
                 <div className="flex flex-col gap-y-[10px]">
                   <LinkHover

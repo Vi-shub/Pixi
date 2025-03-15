@@ -15,9 +15,13 @@ export const navbarItems = [
    {
       id: 3,
       title: "About us",
-      href: "/ochi-team",
+      href: "/about-us",
    },
-   
+   {
+      id:4,
+      title: "Legal terms",
+      href: "/legal-terms"
+   },
    {
       id: 5,
       title: "Contact us",
