@@ -71,12 +71,12 @@ export const footernavbarItems = [
    {
       id: 3,
       title: "Our work",
-      href: "presentation",
+      href: "work",
    },
    {
       id: 4,
       title: "About us",
-      href: "ochi-team",
+      href: "about-us",
    },
    
    {
