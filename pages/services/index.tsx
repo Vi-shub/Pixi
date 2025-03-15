@@ -24,7 +24,7 @@ export default function Services() {
 				<Process />
 				{/* <Capibilyties /> */}
 				{/* <Clientsservices /> */}
-				<Archive />
+				{/* <Archive /> */}
 				{/* <Expectations /> */}
 				<Ready />
 			</Curve>

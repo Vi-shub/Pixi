@@ -1,22 +1,22 @@
 import Image from "next/image";
-import { Team1, Team2, Team3, Team4, logo } from "@/public";
+import { Team1, Team2, Team3, Team4,logo_black } from "@/public";
 import { motion } from "framer-motion";
 
 const teamMembers = [
-	{ name: "ABHISHEK SINGH", role: "Founder and CEO", image: Team1 },
-	{ name: "JANE DOE", role: "CTO", image: Team2 },
-	{ name: "JOHN SMITH", role: "COO", image: Team3 },
-	{ name: "EMILY DAVIS", role: "CFO", image: Team4 },
+	{ name: "ABHISHEK SINGH", role: "Team Member", image: Team1 },
+	{ name: "MARIYA SHAIKH", role: "Team Member", image: Team2 },
+	{ name: "AAYUSH RAWAT", role: "Team Member", image: Team3 },
+	
 ];
 
 export default function Team() {
 	return (
-		<section className="w-full bg-marquee min-h-screen rounded-t-[20px]">
+		<section className="w-full bg-[#ff7f50] min-h-screen rounded-t-[20px]">
 			<div
 				style={{ minHeight: "300vh" }}
 				className="relative flex flex-col items-center px-4 pt-24 pb-12 sm:px-6 lg:px-40"
 			>
-				<div className="w-[90%] lg:max-w-none lg:px-40 space-y-8">
+				<div className="w-[90%] space-y-8">
 					{teamMembers.map((member, index) => (
 						<motion.div
 							key={index}
@@ -25,7 +25,7 @@ export default function Team() {
 						>
 							<div className="flex justify-between sm:flex-col gap-[20px]">
 								<div>
-									<Image src={logo} alt="logo" width={50} height={50} />
+									<Image src={logo_black} alt="logo" width={50} height={50} />
 								</div>
 								<div>
 									<Image

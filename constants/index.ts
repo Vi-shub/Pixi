@@ -1,5 +1,4 @@
 import { capaybilities1, capaybilities2, capaybilities3, capaybilities4, client01, client02, client03, client04, client05, client06, client07, client08, client09, insights1, insights2, insights3, latest1, latest2, nestle, officevibe, phase1, phase2, phase3, phase4, phase5, planetly, project1, project2, project3, project4, project5, project6, project7, project8, project9, publication1, publication2, publication3 } from "@/public";
-
 // Navbar
 export const navbarItems = [
    {
@@ -338,87 +337,46 @@ export const clientsItem = [
 export const projectItem = [
    {
       id: 1,
-      title: "fyde",
-      href: "/case/",
+      title: "Showdown",
+      href: "",
       src: project1,
+      type: "image", // Added type
       links: [
-         {
-            id: 1,
-            title: "audit",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "copywriting",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "sales deck",
-            href: "/services",
-         },
-         {
-            id: 4,
-            title: "slides design",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 2,
-      title: "vise",
+      title: "Saturday",
       href: "/case/",
       src: project2,
+      type: "image", 
       links: [
-         {
-            id: 1,
-            title: "agency",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "compony presentation",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 3,
-      title: "trawa",
+      title: "Party",
       href: "/case/",
       src: project3,
+      type: "image", // Video type added
       links: [
-         {
-            id: 1,
-            title: "brand identity",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "design research",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "investor deck",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 4,
-      title: "premiumblend",
+      title: "Adventure",
       href: "/case/",
       src: project4,
+      type: "image", 
       links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
 ];
+
 
 
 // services page
@@ -869,201 +827,94 @@ export const achiveItems = [
 export const presentationProjectItem = [
    {
       id: 1,
-      title: "fyde",
+      title: "Showdown",
+      href: "",
       src: project1,
-      href: "/case/",
+      type: "image", // Added type
       links: [
-         {
-            id: 1,
-            title: "audit",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "copywriting",
-            href: "services",
-         },
-         {
-            id: 3,
-            title: "sales deck",
-            href: "services",
-         },
-         {
-            id: 4,
-            title: "slides design",
-            href: "services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 2,
-      title: "trawa",
-      src: project3,
+      title: "Saturday",
       href: "/case/",
+      src: project2,
+      type: "image", 
       links: [
-         {
-            id: 1,
-            title: "brand identity",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "design research",
-            href: "services",
-         },
-         {
-            id: 3,
-            title: "investor deck",
-            href: "services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 3,
-      title: "premium blend",
-      src: project4,
+      title: "Party",
       href: "/case/",
+      src: project3,
+      type: "image", // Video type added
       links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 4,
-      title: "planetly",
-      src: project5,
+      title: "Adventure",
       href: "/case/",
+      src: project4,
+      type: "image", 
       links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "big news deck",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "branded template",
-            href: "/services",
-         },
-         {
-            id: 4,
-            title: "investor deck",
-            href: "/services",
-         },
-         {
-            id: 5,
-            title: "policy deck & playbook",
-            href: "/services",
-         },
-         {
-            id: 6,
-            title: "sales deck",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 5,
-      title: "black box",
-      src: project8,
+      title: "Sizzling",
+      src: project5,
       href: "/case/",
+      type: "image", 
       links: [
-         {
-            id: 1,
-            title: "investor deck",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "redesign",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "review",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 6,
-      title: "vise",
-      src: project2,
+      title: "Realme",
+      src: project6,
       href: "/case/",
+      type: "image", 
       links: [
-         {
-            id: 1,
-            title: "agency",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "compony presentation",
-            href: "services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 7,
-      title: "soft start",
-      src: project9,
+      title: "MediaTek",
+      src: project7,
       href: "/case/",
+      type: "image", 
       links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "sales desc",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
    {
       id: 8,
-      title: "officevibe",
-      src: project7,
+      title: "Charged",
+      src: project8,
       href: "/case/",
+      type: "image", 
       links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
+         { id: 1, title: "graphic", href: "/services" },
       ]
    },
-   {
-      id: 9,
-      title: "workiz easy",
-      src: project6,
-      href: "/case/",
-      links: [
-         {
-            id: 1,
-            title: "onboarding presentation",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "policy deck & playbook",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "sales deck",
-            href: "/services",
-         },
-      ]
-   },
+   // {
+   //    id: 9,
+   //    title: "workiz easy",
+   //    src: "/pixavideo.mp4",
+   //    href: "/case/",
+   //    type: "image", 
+   //    links: [
+   //       { id: 1, title: "graphic", href: "/services" },
+   //    ]
+   // },
 ];
 
 
