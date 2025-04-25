@@ -51,10 +51,13 @@ export default function PlayVideo({ videosrc }: { videosrc: string }) {
 				data-scroll-speed="-.8"
 				data-scroll-section>
 				<video
-					className="w-full h-full"
-					loop
-					ref={videoRef}
-					src={videosrc}
+				className="w-full h-full"
+				loop
+				ref={videoRef}
+				src={videosrc}
+				controls={false}
+				controlsList="nodownload"
+				onContextMenu={(e) => e.preventDefault()} // disable right-click
 				/>
 				<motion.div
 					className={`w-full absolute top-[50%] transform translate-y-[-50%] gap-[30px] flex items-center justify-center ${
